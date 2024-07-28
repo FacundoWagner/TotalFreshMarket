@@ -1,1 +1,48 @@
-print("hola mundo")
+let cart = [];
+let cartTotal = 0;
+
+function addToCart(product, price, stockId, imageUrl) {
+    const stockElem = document.getElementById(stockId);
+    let stock = parseInt(stockElem.textContent);
+
+    if (stock > 0) {
+        cart.push({ product, price, imageUrl });
+        cartTotal += price;
+        stock -= 1;
+        stockElem.textContent = stock;
+        updateCart();
+        showMessage(`${product} agregado al carrito.`);
+    } else {
+        showMessage(`Lo siento, no hay stock de ${product}.`);
+    }
+}
+
+function updateCart() {
+    const cartItems = document.getElementById('cart-items');
+    const cartCount = document.getElementById('cart-count');
+    const cartTotalElem = document.getElementById('cart-total');
+
+    cartItems.innerHTML = '';
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<img src="${item.imageUrl}" alt="${item.product}"> ${item.product} - $${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+    });
+
+    cartCount.textContent = cart.length;
+    cartTotalElem.textContent = cartTotal.toFixed(2);
+}
+
+function toggleCart() {
+    const cartElem = document.getElementById('cart');
+    cartElem.style.display = cartElem.style.display === 'none' || cartElem.style.display === '' ? 'block' : 'none';
+}
+
+function showMessage(message) {
+    const messageElem = document.getElementById('message');
+    messageElem.textContent = message;
+    messageElem.classList.add('show');
+    setTimeout(() => {
+        messageElem.classList.remove('show');
+    }, 3000);
+}
