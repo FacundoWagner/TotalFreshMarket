@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Supermercado</title>
+  <link rel="stylesheet" href="styleCarrito.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav1">
+      <div class="contenedor-nav">
+        <div class="logo">
+          <img src="img/logo2.png" alt="Logo del Supermercado">
+
+        </div>
+        <div class="enlaces" id="enlaces">
+          <ul class="navbar-nav  ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+
+              <a class="nav-link" href="carrito.html">Carrito</a>
+
+            </li>
+          </ul>
+        </div>
+        <button class="cart-button" onclick="toggleCart()">Carrito (<span id="cart-count">0</span>)</button>
+      </div>
+    </nav>
+    <div class="textos">
+      <div class="image">
+        <img src="img/logo4.png" alt="">
+        <h2>Encuentra todo lo que necesitas</h2>
+      </div>
+  </header>
+  <main class="contenedor">
+    <div class="productos">
+      <div class="product content-card">
+        <img src="img/productos/leche.png" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Leche</h2>
+        <p>Precio: $1.00</p>
+        <p>Stock: <span id="stock-leche">10</span></p>
+        <button class="agregar-carrito"
+          onclick="addToCart('Leche', 1, 'stock-leche', 'img/productos/leche.png')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/banana.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Banana</h2>
+        <p>Precio: $0.50</p>
+        <p>Stock: <span id="stock-banana">5</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Banana', 0.5, 'stock-banana', 'img/productos/banana.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/manzana.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Manzana</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-manzana">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Manzana', 1.5, 'stock-manzana', 'img/productos/manzana.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/coca-cola.png" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Coca-Cola</h2>
+        <p>Precio: $1.00</p>
+        <p>Stock: <span id="stock-coca">10</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Coca-Cola', 1, 'stock-coca', 'img/productos/coca-cola.png')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/fanta.jpeg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Fanta</h2>
+        <p>Precio: $0.50</p>
+        <p>Stock: <span id="stock-fanta">5</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Fanta', 0.5, 'stock-fanta', 'img/productos/fanta.jpeg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/fideos.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Fideos</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-fideos">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Fideos', 1.5, 'stock-fideos', 'img/productos/fideos.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/arroz.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Arroz</h2>
+        <p>Precio: $1.00</p>
+        <p>Stock: <span id="stock-arroz">10</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Arroz', 1, 'stock-arroz', 'img/productos/arroz.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/chocolate.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Chocolate</h2>
+        <p>Precio: $0.50</p>
+        <p>Stock: <span id="stock-chocolate">5</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Chocolate', 0.5, 'stock-chocolate', 'img/productos/chocolate.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/carne-picada.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Carne Picada</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-carne-picada">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Carne Picada', 1.5, 'stock-carne-picada', 'img/productos/carne-picada.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/carne1.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Bife de Chorizo</h2>
+        <p>Precio: $1.00</p>
+        <p>Stock: <span id="stock-carne">10</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Carne', 1, 'stock-carne', 'img/productos/carne1.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/agua.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Agua Mineral</h2>
+        <p>Precio: $0.50</p>
+        <p>Stock: <span id="stock-agua">5</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Agua Mineral', 0.5, 'stock-agua', 'img/productos/agua.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/pan.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>1kg Pan</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-pan">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('1kg Pan', 1.5, 'stock-pan', 'img/productos/pan.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/yogurt.png" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Yogurt</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-yogurt">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Yogurt', 1.5, 'stock-yogurt', 'img/productos/yogurt.png')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/queso.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>Queso</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-queso">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('Queso', 1.5, 'stock-queso', 'img/productos/queso.jpg')">Agregar al
+          carrito</button>
+      </div>
+      <div class="product content-card">
+        <img src="img/productos/facturas.jpg" width="250" height="250" alt="Leche" class="img-producto">
+        <h2>1Doc de Facturas</h2>
+        <p>Precio: $1.50</p>
+        <p>Stock: <span id="stock-facturas">2</span></p>
+        <button class="agregar-carrito" onclick="addToCart('1Doc de Facturas', 1.5, 'stock-facturas', 'img/productos/facturas.jpg')">Agregar al
+          carrito</button>
+      </div>
+    </div>
+    <div class="cart" id="cart">
+      <h2>Tu Carrito</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <div id="message" class="message"> </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
