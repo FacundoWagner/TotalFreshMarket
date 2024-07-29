@@ -6,7 +6,7 @@ function addToCart(product, price, stockId, imageUrl) {
     let stock = parseInt(stockElem.textContent);
 
     if (stock > 0) {
-        cart.push({ product, price, imageUrl });
+        cart.push({ product, price, stockId, imageUrl });
         cartTotal += price;
         stock -= 1;
         stockElem.textContent = stock;
@@ -23,9 +23,9 @@ function updateCart() {
     const cartTotalElem = document.getElementById('cart-total');
 
     cartItems.innerHTML = '';
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         const li = document.createElement('li');
-        li.innerHTML = `<img src="${item.imageUrl}" alt="${item.product}"> ${item.product} - $${item.price.toFixed(2)}`;
+        li.innerHTML = `<img src="${item.imageUrl}" alt="${item.product}"> ${item.product} - $${item.price.toFixed(2)} <button onclick="removeFromCart(${index})">Remove</button>`;
         cartItems.appendChild(li);
     });
 
@@ -45,4 +45,28 @@ function showMessage(message) {
     setTimeout(() => {
         messageElem.classList.remove('show');
     }, 3000);
+}
+
+function removeFromCart(index) {
+    const item = cart[index];
+    const stockElem = document.getElementById(item.stockId);
+    let stock = parseInt(stockElem.textContent);
+
+    cartTotal -= item.price;
+    cart.splice(index, 1);
+    stock += 1;
+    stockElem.textContent = stock;
+    updateCart();
+    showMessage(`${item.product} eliminado del carrito.`);
+}
+
+function checkout() {
+    if (cart.length > 0) {
+        cart = [];
+        cartTotal = 0;
+        updateCart();
+        showMessage('Compra realizada con éxito.');
+    } else {
+        showMessage('El carrito está vacío.');
+    }
 }
