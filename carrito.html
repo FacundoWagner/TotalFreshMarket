@@ -167,13 +167,14 @@
     <div class="cart" id="cart">
       <h2>Tu Carrito</h2>
       <ul id="cart-items"></ul>
-      <p>Total: $<span id="cart-total">0.00</span></p>
-      <button class="buy-cart" onclick="checkout()"><a class="nav-link" href="pago.html">Comprar</a></button>
+      <p>Total:<span id="cart-total">0.00</span></p>
+      <button class="buy-cart" onclick="comprarItems()">Comprar</button>
 
     </div>
-    <div id="message" class="message"> </div>
+    <div id="message" class="message"></div>
   </main>
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
