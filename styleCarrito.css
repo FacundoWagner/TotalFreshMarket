@@ -246,6 +246,7 @@ main {
     color: #666;
 }
 
+/* Botones */
 .add-to-cart {
     background-color: #f44336;
     border: none;
@@ -259,45 +260,6 @@ main {
 .add-to-cart:hover {
     background-color: #d32f2f;
 }
-
-.cart {
-    display: none;
-    margin-right: auto;
-
-}
-
-#cart-items {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#cart-items li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-#cart-items img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-/* .remove-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.remove-icon {
-    width: 20px; 
-    height: 20px; 
-} */
 
 .button {
     width: 50px;
@@ -354,6 +316,84 @@ main {
     transform: translateY(30px);
     transition-duration: .3s;
 }
+
+/* .remove-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.remove-icon {
+    width: 20px; 
+    height: 20px; 
+} */
+
+
+.button-pay {
+    width: fit-content;
+    display: flex;
+    padding: 1.2em 1rem;
+    cursor: pointer;
+    gap: 0.4rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg, #e0a118, #e0bb18, #dde018, #a0de3d, #a0de3d, #dde018, #e0bb18, #e0a118) no-repeat;
+    background-size: 300%;
+    color: #000000;
+    border: none;
+    background-position: left center;
+    box-shadow: 0 30px 10px -20px rgba(0, 0, 0, .2);
+    transition: background .3s ease;
+}
+
+.button-pay:hover {
+    background-size: 320%;
+    background-position: right center;
+}
+
+.button-pay:hover svg {
+    fill: #000000;
+}
+
+.button-pay svg {
+    width: 23px;
+    fill: #f09f33;
+    transition: .3s ease;
+}
+
+/* Fin de Botones */
+.cart {
+    display: none;
+    margin-right: auto;
+
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#cart-items img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+
+
 
 .buy-cart {
     background-color: #5de67f;
