@@ -25,13 +25,18 @@ function updateCart() {
     cartItems.innerHTML = '';
     cart.forEach((item, index) => {
         const li = document.createElement('li');
-        li.innerHTML = `<img src="${item.imageUrl}" alt="${item.product}"> ${item.product} - $${item.price.toFixed(2)} <button onclick="removeFromCart(${index})">Remove</button>`;
+        li.innerHTML = `<img src="${item.imageUrl}" alt="${item.product}"> ${item.product} - $${item.price.toFixed(2)} 
+                        <button class="remove-button" onclick="removeFromCart(${index})">
+                            <img src="img/trash.png" alt="Remove" class="remove-icon">
+                        </button>`;
         cartItems.appendChild(li);
     });
 
     cartCount.textContent = cart.length;
-    cartTotalElem.textContent = cartTotal.toFixed(2);
+    const cartTotal = cart.reduce((total, item) => total + item.price, 0);
+    cartTotalElem.textContent = `$${cartTotal.toFixed(2)}`;
 }
+
 
 function toggleCart() {
     const cartElem = document.getElementById('cart');

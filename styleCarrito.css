@@ -284,6 +284,18 @@ main {
     margin-right: 10px;
 }
 
+.remove-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.remove-icon {
+    width: 20px; 
+    height: 20px; 
+}
+
 
 .buy-cart {
     background-color: #5de67f;
