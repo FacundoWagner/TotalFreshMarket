@@ -61,6 +61,7 @@ function removeFromCart(index) {
 }
 
 function checkout() {
+    
     if (cart.length > 0) {
         cart = [];
         cartTotal = 0;

@@ -65,3 +65,10 @@ window.addEventListener('resize', function(){
 abrir.addEventListener('click', function(){
     apertura();
 });
+
+const video = document.getElementById('video');
+
+video.addEventListener('ended', function() {
+  this.currentTime = 0;
+  this.play();
+});
