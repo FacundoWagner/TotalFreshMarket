@@ -285,6 +285,22 @@ main {
 }
 
 
+.buy-cart {
+    background-color: #5de67f;
+    border: none;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-cart:hover {
+    background-color: #5de67f;
+}
+
+
+
 .message {
     background-color: #ffeb3b;
     color: #333;
