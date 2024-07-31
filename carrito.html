@@ -22,7 +22,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
 
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <!--               <a class="nav-link" href="nosotros.html">Nosotros</a> -->
 
               <a class="nav-link" href="carrito.html">Carrito</a>
 
@@ -47,138 +47,183 @@
         <h2>Leche</h2>
         <p>Precio: $1.00</p>
         <p>Stock: <span id="stock-leche">10</span></p>
-        <button class="add-to-cart" onclick="addToCart('Leche', 1, 'stock-leche', 'img/productos/leche.png')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Leche', 1, 'stock-leche', 'img/productos/leche.png')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
+
       </div>
       <div class="product content-card">
         <img src="img/productos/banana.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Banana</h2>
         <p>Precio: $0.50</p>
         <p>Stock: <span id="stock-banana">5</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Banana', 0.5, 'stock-banana', 'img/productos/banana.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Banana', 0.5, 'stock-banana', 'img/productos/banana.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/manzana.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Manzana</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-manzana">2</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Manzana', 1.5, 'stock-manzana', 'img/productos/manzana.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Manzana', 1.5, 'stock-manzana', 'img/productos/manzana.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/coca-cola.png" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Coca-Cola</h2>
         <p>Precio: $1.00</p>
         <p>Stock: <span id="stock-coca">10</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Coca-Cola', 1, 'stock-coca', 'img/productos/coca-cola.png')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Coca-Cola', 1, 'stock-coca', 'img/productos/coca-cola.png')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/fanta.jpeg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Fanta</h2>
         <p>Precio: $0.50</p>
         <p>Stock: <span id="stock-fanta">5</span></p>
-        <button class="add-to-cart" onclick="addToCart('Fanta', 0.5, 'stock-fanta', 'img/productos/fanta.jpeg')">Agregar
-          al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Fanta', 0.5, 'stock-fanta', 'img/productos/fanta.jpeg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
       </div>
       <div class="product content-card">
         <img src="img/productos/fideos.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Fideos</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-fideos">2</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Fideos', 1.5, 'stock-fideos', 'img/productos/fideos.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Fideos', 1.5, 'stock-fideos', 'img/productos/fideos.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/arroz.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Arroz</h2>
         <p>Precio: $1.00</p>
         <p>Stock: <span id="stock-arroz">10</span></p>
-        <button class="add-to-cart" onclick="addToCart('Arroz', 1, 'stock-arroz', 'img/productos/arroz.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Arroz', 1, 'stock-arroz', 'img/productos/arroz.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
       </div>
       <div class="product content-card">
         <img src="img/productos/chocolate.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Chocolate</h2>
         <p>Precio: $0.50</p>
         <p>Stock: <span id="stock-chocolate">5</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Chocolate', 0.5, 'stock-chocolate', 'img/productos/chocolate.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add"
+          onclick="addToCart('Chocolate', 0.5, 'stock-chocolate', 'img/productos/chocolate.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/carne-picada.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Carne Picada</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-carne-picada">2</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Carne Picada', 1.5, 'stock-carne-picada', 'img/productos/carne-picada.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add"
+          onclick="addToCart('Carne Picada', 1.5, 'stock-carne-picada', 'img/productos/carne-picada.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/carne1.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Bife de Chorizo</h2>
         <p>Precio: $1.00</p>
         <p>Stock: <span id="stock-carne">10</span></p>
-        <button class="add-to-cart" onclick="addToCart('Carne', 1, 'stock-carne', 'img/productos/carne1.jpg')">Agregar
-          al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Carne', 1, 'stock-carne', 'img/productos/carne1.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
       </div>
       <div class="product content-card">
         <img src="img/productos/agua.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Agua Mineral</h2>
         <p>Precio: $0.50</p>
         <p>Stock: <span id="stock-agua">5</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Agua Mineral', 0.5, 'stock-agua', 'img/productos/agua.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Agua Mineral', 0.5, 'stock-agua', 'img/productos/agua.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/pan.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>1kg Pan</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-pan">2</span></p>
-        <button class="add-to-cart" onclick="addToCart('1kg Pan', 1.5, 'stock-pan', 'img/productos/pan.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('1kg Pan', 1.5, 'stock-pan', 'img/productos/pan.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
       </div>
       <div class="product content-card">
         <img src="img/productos/yogurt.png" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Yogurt</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-yogurt">2</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('Yogurt', 1.5, 'stock-yogurt', 'img/productos/yogurt.png')">Agregar al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Yogurt', 1.5, 'stock-yogurt', 'img/productos/yogurt.png')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg></button>
       </div>
       <div class="product content-card">
         <img src="img/productos/queso.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>Queso</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-queso">2</span></p>
-        <button class="add-to-cart" onclick="addToCart('Queso', 1.5, 'stock-queso', 'img/productos/queso.jpg')">Agregar
-          al
-          carrito</button>
+        <button class="button-add" onclick="addToCart('Queso', 1.5, 'stock-queso', 'img/productos/queso.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
       </div>
       <div class="product content-card">
         <img src="img/productos/facturas.jpg" width="250" height="250" alt="Leche" class="img-producto">
         <h2>1Doc de Facturas</h2>
         <p>Precio: $1.50</p>
         <p>Stock: <span id="stock-facturas">2</span></p>
-        <button class="add-to-cart"
-          onclick="addToCart('1Doc de Facturas', 1.5, 'stock-facturas', 'img/productos/facturas.jpg')">Agregar al
-          carrito</button>
+        <button class="button-add"
+          onclick="addToCart('1Doc de Facturas', 1.5, 'stock-facturas', 'img/productos/facturas.jpg')">
+          <svg class="svgIcon" viewBox="0 0 576 512">
+            <path fill="white"
+              d="M528.12 301.319l47.273-208C577.352 86.079 564.273 64 544.193 64H130.238L121.78 9.338A16 16 0 0 0 105.932 0H24A24 24 0 0 0 0 24v16a24 24 0 0 0 24 24h63.642l61.054 268.56-20.764 93.528C123.867 451.878 136.946 474 157.026 474H512a16 16 0 0 0 15.946-13.155l24-104a16 16 0 0 0-15.826-18.526H166.729l7.781-35h332.722c10.003 0 18.926-6.93 21.886-16.845zM159.221 432a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32zm320 0a32 32 0 1 1-31.999 32 32 32 0 0 1 31.999-32z" />
+          </svg>
+        </button>
       </div>
     </div>
     <div class="cart" id="cart">
       <h2>Tu Carrito</h2>
       <ul id="cart-items"></ul>
       <p>Total:<span id="cart-total">0.00</span></p>
+      <h4></h4>
       <button class="button-pay" onclick="comprarItems()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
