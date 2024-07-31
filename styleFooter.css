@@ -9,7 +9,7 @@ footer {
     justify-content: center;
     width: 100%;
     background-size: cover;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .marca-logo {
@@ -246,4 +246,3 @@ footer p {
 .card4:hover .gmail {
     fill: white;
 }
-
