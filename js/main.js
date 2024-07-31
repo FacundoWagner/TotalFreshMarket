@@ -72,3 +72,19 @@ video.addEventListener('ended', function() {
   this.currentTime = 0;
   this.play();
 });
+
+function redirigirInstagram(){
+    window.location.href = `https://www.instagram.com/sinergyacademy_/`;
+}
+
+function redirigirFacebook(){
+    window.location.href = `https://www.facebook.com/facebook/?brand_redir=103274306376166&locale=es_LA`;
+}
+
+function redirigirWhatsapp(){
+    window.location.href = `https://web.whatsapp.com/`;
+}
+
+function redirigirGmail(){
+    window.location.href = `https://mail.google.com/mail/u/0/#inbox`;
+}
