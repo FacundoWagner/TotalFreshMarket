@@ -317,18 +317,6 @@ main {
     transition-duration: .3s;
 }
 
-/* .remove-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.remove-icon {
-    width: 20px; 
-    height: 20px; 
-} */
-
 
 .button-pay {
     width: fit-content;
