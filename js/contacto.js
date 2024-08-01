@@ -13,12 +13,21 @@ function exportToTxt() {
         Mensaje: ${message}
     `;
 
-    const blob = new Blob([data], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'formulario_contacto.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+
+
+    if (!firstName || !lastName || !email || !phone || !message) {
+        alert('Completa todos los campos.')
+    }
+    else {
+        const blob = new Blob([data], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'formulario_contacto.txt';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+    }
 }
+
