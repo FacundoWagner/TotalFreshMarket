@@ -102,6 +102,7 @@ header {
 
 nav {
     width: 100%;
+    z-index: 1;
     position: fixed;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5)
 }
@@ -110,12 +111,14 @@ nav {
     background: transparent;
     height: 80px;
     color: #fff;
+
 }
 
 .nav2 {
     background: var(--fondo);
     height: 100px;
     color: #000;
+
 }
 
 .contenedor-nav {
@@ -139,6 +142,7 @@ nav .enlaces a {
     text-decoration: none;
     border-bottom: 3px solid transparent;
     color: inherit;
+    z-index: 1;
 }
 
 nav .enlaces a:hover {
